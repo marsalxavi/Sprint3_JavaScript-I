@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Map Contar Lletres</title>
+</head>
+
+<h2>Map Contar Lletres</h2>
+
+<body>
+    <p id="app" </p>
+        <script>
+            var elMeuNom = ["A", "L", "E", "X", "A", "N", "D", "R", "E"];
+            // var elMeuNom = ["A", "E", "I", "O", "U", "A", "E", "I", "O", "U", "A", "E", "I", "O", "U"];
+            // Init Map Array
+            var letterCount = new Map();
+            var lletra, teLletra, numLletresAra;
+
+            for (i = 0; i < elMeuNom.length; i++) {
+                var lletra = elMeuNom[i];
+                teLletra = letterCount.has(lletra);
+                if (teLletra == true) {
+                    numLletresAra = letterCount.get(lletra);
+                    numLletresAra++;
+                    letterCount.set(lletra, numLletresAra);
+                } else {
+                    letterCount.set(lletra, 1);
+                }
+            }
+            console.log(elMeuNom);
+            console.log(letterCount);
+        </script>
+</body>
+
+</html>

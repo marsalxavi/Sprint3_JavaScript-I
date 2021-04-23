@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Vocal/Consonant</title>
+</head>
+
+<h2>Vocal/Consonant</h2>
+
+<body>
+    <p id="app" </p>
+        <script>
+            var elMeuNom = ["A", "L", "E", "X", "A", "N", "D", "R", "E"];
+            for (i = 0; i < elMeuNom.length; i++) {
+                var lletra = elMeuNom[i];
+                if (lletra.toUpperCase() == "A" ||
+                    lletra.toUpperCase() == "E" ||
+                    lletra.toUpperCase() == "I" ||
+                    lletra.toUpperCase() == "O" ||
+                    lletra.toUpperCase() == "U"
+                ) {
+                    console.log("He trobat la VOCAL: " + lletra);
+                } else {
+                    console.log("He trobat la CONSONTANT: " + lletra);
+                }
+            }
+            console.log(elMeuNom)
+        </script>
+</body>
+
+</html>
